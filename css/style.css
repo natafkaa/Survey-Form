@@ -1,0 +1,142 @@
+/*Обнуление*/
+
+*{padding:0;  margin:0;  border: 0;}
+*,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+/*--------------------*/
+
+body {
+  font-family: 'Poppins', sans-serif;;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #F3F3F3;
+  /*background: linear-gradient(115deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/bg.jpg') center/cover  no-repeat fixed rgba(0, 0, 0, 0.5);*/
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://abrakadabra.fun/uploads/posts/2022-02/1644041405_31-abrakadabra-fun-p-oboi-na-rabochii-stol-ofisnie-delovie-39.jpg) center/cover no-repeat fixed rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* header
+===============*/
+.header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.header_title {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.header_description {
+  font-size: 22px;
+  font-style: italic;
+  color: rgb(220, 220, 220);
+}
+
+.header span {
+  font-weight: 700;
+}
+
+/* form
+===============*/
+form {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-input {
+  height: 35px;
+  font-size: 16px;
+  padding: 7px;
+  color: #565656;
+  border-radius: 5px;
+}
+
+.input-wide {  /*Широкий*/
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+}
+
+.input-narrow {  /*Узкий*/
+  margin-left: 15px;
+}
+
+.form-input:focus, textarea:focus{
+  -webkit-box-shadow: 0px 0px 5px #fff;
+  box-shadow: 0px 0px 5px #fff;
+}
+
+fieldset {
+  margin: 0 2px;
+  padding: 0.35em 0.75em 0.625em;
+  border: 2px groove threedface;
+}
+
+fieldset input {
+  margin-bottom: 15px;
+}
+
+fieldset input:last-child {
+  margin-bottom: 0;
+}
+
+textarea {
+  resize: none;
+  font-size: 16px;
+  padding: 7px;
+  color: #565656;
+  border-radius: 5px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(50, 255, 110, 1);
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.btn:hover {
+  background-color: rgba(20, 210, 70, 1);
+  color: #F3F3F3;
+}
+
+
+.btn-file {
+  display: block;
+  font-size: 16px;
+  margin-top: 7px;
+  font-style: italic;
+}
+

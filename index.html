@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+     <header class="header">
+      <h1 id="title" class="header_title">
+      Анкета кандидата на должность "<span>Инженер-конструктор</span>"</h1>
+      <p id="description" class="header_description">
+      Для выполнения новых проектов с международными партнерами компания <span>Architecture</span> ищет специалиста. Потратьте, пожалуйста, несколько минут своего времени на заполнение следующей анкеты</p>
+    </header>
+
+    <form action="" method="post" enctype="multipart/form-data" id="survey-form">
+
+      <div class="form-group">
+        <label id="name-label">ФИО<sup>*</sup></label>
+        <input type="text" name="name" placeholder="Введите ваше ФИО" required id="name" class="form-input input-wide ">
+      </div>
+
+      <div class="form-group">
+        <label>Дата рождения<sup>*</sup></label>
+        <input type="date" name="birthday" required class="form-input input-narrow">
+      </div>
+
+      <div class="form-group">
+        <label>Контактный телефон</label>
+        <input type="tel" name="tel" placeholder="38(0XX)-XXX-XXXX" class="form-input input-wide">
+      </div>
+
+      <div class="form-group">
+        <label id="email-label">Адрес электронной почты<sup>*</sup></label>
+        <input type="email" name="email" placeholder="Введите ваш email" required id="email" class="form-input input-wide">
+      </div>
+
+      <div class="form-group">
+        <label id="number-label">Укажите желаемый уровень заработной платы<sup>*</sup></label>
+        <input type="number" name="wages"  min="5000" max="20000" placeholder="грн" required id="number" class="form-input input-narrow">
+      </div>
+
+      <div class="form-group">
+        <label>Откуда Вам стало известно о Компании?</label>
+        <select name="know" id="dropdown" class="form-input input-wide">
+          <option disabled selected>Выберите один из вариантов</option>
+          <option value="JobSearchSite"> Сайт по поиску работы</option>
+          <option value="SiteCompany"> Сайт Компании</option>
+          <option value="MassMedia"> СМИ</option>
+          <option value="Recommendation"> Рекомендация знакомых</option>
+          <option value="RecruitmentAgency"> Кадровое агентство</option>
+          <option value="PublicEmploymentService"> Служба занятости населения</option>
+          <option value="JobFair"> Ярмарка вакансий</option>
+          <option value="Other"> Другое</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <fieldset>
+          <legend>Мотивация для работы в Компании</legend>
+            <input type="checkbox" name="motivation" value="Decent-salary"> Достойная зарплата <br>
+            <input type="checkbox" name="motivation" value="career"> Карьерный рост <br>
+            <input type="checkbox" name="motivation" value="Interesting-projects"> Интересные проекты <br>
+            <input type="checkbox" name="motivation" value="schedule"> Гибкий график работы <br>
+            <input type="checkbox" name="motivation" value="Events"> Корпоративные мероприятия
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <label>Ваши увлечения вне работы (хобби)</label>
+        <textarea rows="3" name="hobby" placeholder="Напишите пару слов" class="input-wide"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Здесь Вы можете прикрепить документы, дипломы, рекомендательные письма</label>
+        <input type="file" name="file" class="btn-file">
+      </div>
+
+      <div class="form-group">
+        <fieldset>
+          <legend>Работают ли в Компании Ваши друзья/родственники/знакомые?</legend>
+          <input type="radio" name="acquaintance" value="Yes"> Да <br>
+          <input type="radio" name="acquaintance" value="No"> Нет
+          <br>
+          <input type="radio" name="acquaintance" value="don't-know"> Затрудняюсь ответить
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <label>По каким причинам Вы оставили последнее место работы</label>
+        <textarea rows="3" name="last job" placeholder="Напишите пару слов" class="input-wide"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Чем Вас привлекает предложенная вакансия</label>
+        <textarea rows="3" name="привлекает" placeholder="Напишите пару слов" class="input-wide"></textarea>
+      </div>
+
+      <button type="submit" id="submit" class="btn">Отправить</button>
+    </form>
+  </div>
+</body>
+</html>
